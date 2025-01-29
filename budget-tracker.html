@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Budget planner</title>
+  <link rel="stylesheet" href="styles.css">
+  <body>
+    <div class= "header">
+     <h1>Monthly Budget Planner</h1>
+       
+
+        <!-- navigation bar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="budget-tracker.html">Budget planner</a></li>
+                <li><a href="resources.html">Resources</a></li>
+            </ul>
+        </nav>
+        </div>
+
+        <!-- Tabs -->
+        <div class="container" id="budgetTabs">
+            <div class="container2" id="budgetTabs">
+                <div class="d-flex">
+                <div class="d-flex text-center">
+                    <div class="TabButton" data-tab="Tab1"> Dashboard</div>
+                    <div class="TabButton" data-tab="Tab2"> Income</div>
+                    <div class="TabButton" data-tab="Tab3"> Household Bills</div>
+                    <div class="TabButton" data-tab="Tab4"> Lifestyle</div>
+                    <div class="TabButton" data-tab="Tab5"> Family</div>
+                    <div class="TabButton" data-tab="Tab6"> Finance and Insurance</div>
+                    <div class="TabButton" data-tab="Tab7"> Transport</div>
+                    <div class="TabButton" data-tab="Tab8"> Savings</div>
+                </div>
+            </div>
+
+            <!--   Tab body -->
+
+            <!-- Dashboard -->
+            <div class="d-flex-col">
+            <div class="tab-section" data-tab="Tab1">
+                <h3>Dashboard</h3>
+                <div class="column">
+                <label>Household Bills:</label><input id="householdTotal" placeholder="£" readonly></br>
+                <label>Lifestyle:</label><input id="lifestyleTotal" placeholder="£" readonly></br>
+                <label>Family:</label><input id="familyTotal" placeholder="£" readonly></br>
+                <label>Finance and Insurance:</label><input id="financeTotal" placeholder="£" readonly></br>
+                <label>Transport:</label><input id="transportTotal" placeholder="£" readonly></br>
+                <label>Savings:</label><input id="savingsTotal" placeholder="£" readonly></br>
+            </div>
+            </div>
+
+            <!-- Income -->
+            <div class="tab-section" data-tab="Tab2"> 
+                <h3>Income</h3>
+                <div class="column">
+                <label for="income">Employment:</label><input class="income" placeholder="£"> <br/>
+                <label for="income">Self-employment:</label><input class="income" placeholder="£"><br/>
+                <label for="income">Savings:</label><input class="income" placeholder="£"><br/>
+                <label for="income">Pension:</label><input class="income" placeholder="£"><br/>
+                <label for="income">Investment:</label><input class="income" placeholder="£"><br/>
+                <label for="income">Misc:</label><input class="income" placeholder="£"><br/>
+                </div>
+            </div>
+            
+            <!--  Household bills  -->
+            <div class="tab-section" data-tab="Tab3">  
+            <h3>Household Bills</h3>
+            <div class="column">
+                <label for="household-bills">Rent/mortgage:</label><input class="expense household" placeholder="£"><br/>
+                <label for="household-bills">Groceries:</label><input class="expense household" placeholder="£"><br/>
+                <label for="household-bills">Water:</label><input class="expense household" placeholder="£"><br/>
+                <label for="household-bills">Electricity:</label><input class="expense household" placeholder="£"><br/>
+                <label for="household-bills">Gas:</label><input class="expense household" placeholder="£"><br/>
+                <label for="household-bills">WiFi:</label><input class="expense household" placeholder="£"><br/>
+                <label for="household-bills">Council Tax:</label><input class="expense household" placeholder="£"><br/>  
+                <label for="household-bills">Credit Card Bill:</label><input class="expense household" placeholder="£"><br/>     
+                <label for="household-bills">Household Loans:</label><input class="expense household" placeholder="£"><br/>     
+                <label for="household-bills">Miscellaneous:</label><input class="expense household" placeholder="£"><br/>   
+            </div>
+            </div>
+
+            <!-- Lifestyle Bills -->
+            <div class="tab-section" data-tab="Tab4">
+            <h3>Lifestyle</h3>
+            <div class="column">
+                <label for="lifestyle">Phone bill:</label><input class="lifestyle expense" placeholder="£"><br/>
+                <label for="lifestyle">TV License:</label><input class="expense lifestyle" placeholder="£"><br/> 
+                <label for="lifestyle">Music:</label><input class="expense lifestyle" placeholder="£"><br/>
+                <label for="lifestyle">Entertainment:</label><input class="expense lifestyle" placeholder="£"><br/>
+                <label for="lifestyle">Eating out:</label><input class="expense lifestyle" placeholder="£"><br/>
+                <label for="lifestyle">Classes and hobbies:</label><input class="expense lifestyle" placeholder="£"><br/>
+                <label for="lifestyle">Holiday:</label><input class="expense lifestyle" placeholder="£"><br/>
+                <label for="lifestyle">Gym:</label><input class="expense lifestyle" placeholder="£"><br/>
+                <label for="lifestyle">Miscellaneous:</label><input class="expense lifestyle" placeholder="£"><br/>
+
+            </div> 
+            </div>
+
+            <!-- Family -->
+            <div class="tab-section" data-tab="Tab5"> 
+            <h3>Family</h3>
+            <div class="column">
+                <label for="family">Childcare:</label><input class="expense family" placeholder="£"><br/>
+                <label for="family">School fees:</label><input class="expense family" placeholder="£"><br/> 
+                <label for="family">Pet food:</label><input class="expense family" placeholder="£"><br/>
+                <label for="family">Vet Bills:</label><input class="expense family" placeholder="£"><br/>
+                <label for="family">Miscellaneous:</label><input class="expense family" placeholder="£"><br/>
+            </div> 
+            </div>
+
+            <!-- Finance -->
+            <div class="tab-section" data-tab="Tab6">
+            <h3>Finance and Insurance</h3>
+            <div class="column">
+                <label for="family">Car Insurance:</label><input class="expense finance" placeholder="£"><br/>
+                <label for="family">House Insurance:</label><input class="expense finance" placeholder="£"><br/> 
+                <label for="family">Life Insurance:</label><input class="expense finance" placeholder="£"><br/>
+                <label for="family">Pet Insurance:</label><input class="expense finance" placeholder="£"><br/>
+                <label for="family">Health Insurance:</label><input class="expense finance" placeholder="£"><br/>
+                <label for="family">Bank Fees:</label><input class="expense finance" placeholder="£"><br/>
+                <label for="family">Loans:</label><input class="expense finance" placeholder="£"><br/>
+                <label for="family">Miscellaneous Fees:</label><input class="expense finance" placeholder="£"><br/>
+
+            </div>
+            </div>
+
+            <!-- Transport -->
+            <div class="tab-section" data-tab="Tab7">
+            <h3>Transport</h3>
+            <div class="column">
+                <label for="transport">Car:</label><input class="expense transport" placeholder="£"><br/>
+                <label for="transport">Bus:</label><input class="expense transport" placeholder="£"><br/> 
+                <label for="transport">Train:</label><input class="expense transport" placeholder="£"><br/>
+                <label for="transport">Bicycle:</label><input class="expense transport" placeholder="£"><br/>
+                <label for="transport">Road tax:</label><input class="expense transport" placeholder="£"><br/>
+                <label for="transport">Miscellaneous:</label><input class="expense transport" placeholder="£"><br/>
+            </div>
+            </div>
+
+            <!-- Savings -->
+            <div class="tab-section" data-tab="Tab8">
+            <h3>Savings</h3>
+            <div class="column">
+                <label for="savings">ISAs:</label><input class="expense savings" placeholder="£"><br/>
+                <label for="savings">Investments:</label><input class="expense savings" placeholder="£"><br/> 
+                <label for="savings">Emergency fund:</label><input class="expense savings" placeholder="£"><br/>
+                <label for="savings">Retirement:</label><input class="expense savings" placeholder="£"><br/>
+                <label for="savings">Vacation:</label><input class="expense savings" placeholder="£"><br/>
+                <label for="savings">Miscellaneous:</label><input class="expense savings" placeholder="£"><br/>
+            </div>    
+            </div>
+        </div>
+    </div>
+
+
+    <!--   summary box -->
+    <div class=d-flex-summary>
+      <h3>Summary</h3>
+      <label>Total Income:</label><input id="incomeTotal" placeholder="£" readonly><br/>
+      <label>Total expense:</label><input id="expenseTotal" placeholder="£" readonly><br/>
+
+    <!--   <label>Money Left:</label>
+    <input id="finalBalance" placeholder="Total expense" readonly><br/></div> -->
+    </div>
+
+    <script src="script.js" ></script>
+  </body>
+</html>
