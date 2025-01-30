@@ -12,13 +12,13 @@ btContainer
 
 //Calculation Script
 const expenseInputs = document.querySelectorAll(".expense");
+const incomeInputs = document.querySelectorAll(".income");
 const householdInputs = document.querySelectorAll(".household");
 const lifestyleInputs = document.querySelectorAll(".lifestyle");
 const familyInputs = document.querySelectorAll(".family");
 const financeInputs = document.querySelectorAll(".finance");
 const transportInputs = document.querySelectorAll(".transport");
 const savingsInputs = document.querySelectorAll(".savings");
-const incomeInputs = document.querySelectorAll(".income");
 const expenseTotalElement = document.querySelector("#expenseTotal");
 const incomeTotalElement = document.querySelector("#incomeTotal");
 const householdTotalElement = document.querySelector("#householdTotal");
