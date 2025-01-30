@@ -50,6 +50,7 @@
                 <label>Finance and Insurance:</label><input id="financeTotal" placeholder="£" readonly></br>
                 <label>Transport:</label><input id="transportTotal" placeholder="£" readonly></br>
                 <label>Savings:</label><input id="savingsTotal" placeholder="£" readonly></br>
+                
             </div>
             </div>
 
@@ -160,11 +161,15 @@
     <!--   summary box -->
     <div class=d-flex-summary>
       <h3>Summary</h3>
-      <label>Total Income:</label><input id="incomeTotal" placeholder="£" readonly><br/>
-      <label>Total expense:</label><input id="expenseTotal" placeholder="£" readonly><br/>
-
-    <!--   <label>Money Left:</label>
-    <input id="finalBalance" placeholder="Total expense" readonly><br/></div> -->
+      <label>Total income:</label>
+      <input id="incomeTotal" placeholder="£" readonly>    
+      <label>Total expense:</label>
+      <input id="expenseTotal" placeholder="£" readonly>
+        <div id=result>
+            <label>Money Left:</label> <span id="finalBalance"></span>
+            <!-- <button id="resetButton">Reset</button>   -->
+            <button id='calculate'>Calculate</button>
+        </div>
     </div>
 
     <script src="script.js" ></script>

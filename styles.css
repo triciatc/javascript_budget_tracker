@@ -17,7 +17,10 @@ h4  {
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
-  }
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
 
 .header {
     padding: 20px;
@@ -25,7 +28,7 @@ h4  {
     background: #BCA1E9;
     color: white;
     font-size: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .navbar ul{
@@ -76,6 +79,7 @@ h4  {
     border: 3px solid #BCA1E9;
     border-radius: 10px;
     margin: 5px;
+    margin-top: 0px;
     margin-right: 50px;
     Padding: 20px;
 }
@@ -85,8 +89,8 @@ h4  {
     padding-right: 80px;
     border-radius: 10px;
     margin: 20px;
-    margin-right: 50px;
-    Padding: 50px;
+    margin-right: 20px;
+    Padding: 20px;
 }
  
 .d-flex {
@@ -105,14 +109,14 @@ input {
   
 label {
     font-family: arial;
-    font-size: 15px;
-    color: #333;
-    height: 20px;
-    width: 200px;
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-bottom: 10px;
-    text-align: left;
+      font-size: 15px;
+      color: #333;
+      height: 20px;
+      width: 200px;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      text-align: left;
     float: left;
 }
   
@@ -125,7 +129,7 @@ label {
     background-color: #BCA1E9;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 20px;
     border-radius: 10px;
     font-weight: bold;
@@ -139,8 +143,8 @@ label {
     height: 50%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
-    padding: 20px;
+    margin-top: 10px;
+    padding: 10px;
     border-radius: 10px;
 }
 
@@ -148,13 +152,10 @@ label {
     font-family: arial;
     display: flex;
     flex-direction: column;
-    width: 80%;
     height: 50%;
     border: 3px solid #BCA1E9;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    padding: 60px;
+    margin-top: 10px;
+    padding: 20px;
     border-radius: 10px;
 }
   
@@ -162,8 +163,8 @@ label {
     display: flex;
     width: 100%;
     flex-direction: column;
-    justify-content: flex-end;
     font-weight: bold;
+    margin-top: 0px;
 }
 
 .d-flex-col2 {
@@ -173,7 +174,7 @@ label {
 }
 
 .column {
-    column-count: 1;
+  column-count: 2;
   column-gap: 10px;
 }
 
@@ -217,7 +218,6 @@ label {
     border-bottom: 3px solid #BCA1E9;
     display: block;
 }
-
 #budgetTabs .tab-section {
     display: none;
 }
